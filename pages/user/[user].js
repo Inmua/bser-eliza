@@ -5,7 +5,8 @@ import styles from './[user].module.css';
 import Userstat from '../../components/Userstat';
 import GameHistory from '../../components/GameHistory';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleNotch, faIgloo } from '@fortawesome/free-solid-svg-icons';
+import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+import Head from 'next/head';
 
 function user({ stat, _games, next }) {
     const router = useRouter();
@@ -82,6 +83,9 @@ function user({ stat, _games, next }) {
 
     return Loading === 0 ? (
         <div className={styles.background}>
+            <Head>
+                <title>{user}</title>
+            </Head>
             <div className={styles.userstat}>
                 <div className={styles.username}>
                     <h1>{user}</h1>
@@ -113,6 +117,9 @@ function user({ stat, _games, next }) {
         </div>
     ) : (
         <div className={styles.background}>
+            <Head>
+                <title>{user}</title>
+            </Head>
             <div className={styles.userstat}>
                 <div className={styles.username}>
                     <h1>{user}</h1>
