@@ -1,0 +1,94 @@
+.root {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.type {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 500;
+    letter-spacing: 0.7vh;
+    margin-top: 1.5vh;
+    margin-left: 1.1vw;
+    margin-right: 0.5vw;
+}
+
+.stat {
+    background-color: #333333;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 10px 10px 52px 10px;
+    display: flex;
+}
+
+.tierimg {
+    max-width: 11.5vw;
+    max-height: 26vh;
+    object-fit: contain;
+}
+
+.title {
+    font-weight: 500;
+    color: white;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.content {
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+.box {
+    border-left: 4px solid #c98484;
+    padding-left: 0.6vw;
+}
+
+.mmrtopbox {
+    display: flex;
+    column-gap: 2vw;
+    margin-top: 2vh;
+}
+
+.statDetail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
+.charactersStat {
+    width: 12vw;
+}
+
+.characterImg {
+    border-radius: 30px;
+    max-width: 5.3vw;
+    max-height: 12vh;
+    object-fit: contain;
+}
+
+.characterStat {
+    display: flex;
+}
+
+.characterStatDetail {
+    margin: auto;
+}
+
+.characterStatDetail > p {
+    font-weight: 400;
+    color: rgb(255, 220, 104);
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.characterStatDetail > p > span {
+    color: white;
+    font-size: 2vh;
+    font-weight: 200;
+}
